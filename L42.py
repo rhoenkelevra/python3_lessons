@@ -1,6 +1,6 @@
 # Animal is-a object (yes, sort of confusing) looka at the extra credit
 
-class Animal(obj):
+class Animal():
     pass
     
 ## Dog is-a Animal
@@ -26,12 +26,12 @@ class Person (object):
         
 ## Employee is-a Person
 class Employee(Person):
-    def __init__(self, name, salary)
-    ## ? hmm what is this strange magic?
-    super(Employee, self).__init__(name)
+    def __init__(self, name, salary):
+        ## ? hmm what is this strange magic?
+        super(Employee, self).__init__(name)
     
-    ## Employee has-a salary
-    self.salary = salary
+        ## Employee has-a salary
+        self.salary = salary
     
 ## Fish is-a Object
 class Fish (object):
@@ -48,10 +48,11 @@ class Halibut(Fish):
 rover = Dog("Rover")
 
 ## Satan is-a Cat
-satan = cat("Satan")
+satan = Cat("Satan")
 
 ## Mary is-a Person
 mary = Person("Mary")
+print(mary.name)
 
 ## mary has-a pet
 mary.pet = satan
